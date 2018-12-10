@@ -1,0 +1,2 @@
+firewall-cmd --permanent --zone=public --add-port=新端口号/tcp
+firewall-cmd --permanent --zone=public --add-port=新端口号/udp
