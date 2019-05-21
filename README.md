@@ -20,8 +20,6 @@ Shadowsocks-libev 版：
 /etc/init.d/shadowsocks-libev start | stop | restart | status
 
 ### 端口
-* -A INPUT -p tcp -m state --state NEW -m tcp --dport 53 -j ACCEPT
-* -A INPUT -p udp -m state --state NEW -m udp --dport 53 -j ACCEPT
-* -A INPUT -p tcp -m state --state NEW -m tcp --dport 80 -j ACCEPT
-* -A INPUT -p udp -m state --state NEW -m udp --dport 80 -j ACCEPT
+* firewall-cmd --zone=public --add-port=80/tcp --permanent
+* firewall-cmd --zone=public --add-port=80/udp --permanent
 
