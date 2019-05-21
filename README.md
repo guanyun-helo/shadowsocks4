@@ -23,3 +23,31 @@ Shadowsocks-libev 版：
 * firewall-cmd --zone=public --add-port=80/tcp --permanent
 * firewall-cmd --zone=public --add-port=80/udp --permanent
 
+### multiport
+
+````
+{
+    "server":"0.0.0.0",
+    "server_ipv6": "[::]",
+    "local_address":"127.0.0.1",
+    "local_port":1080,
+    "port_password":{
+        "53":"123456",
+        "80":"123456",
+        "138":"123456",
+        "443":"123456",
+        "8080":"123456"
+    },
+    "timeout":300,
+    "method":"chacha20",
+    "protocol": "auth_sha1_compatible",
+    "protocol_param": "",
+    "obfs": "http_simple_compatible",
+    "obfs_param": "",
+    "redirect": "",
+    "dns_ipv6": false,
+    "fast_open": false,
+    "workers": 1
+}
+````
+
