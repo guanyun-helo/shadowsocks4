@@ -20,13 +20,8 @@ Shadowsocks-libev 版：
 /etc/init.d/shadowsocks-libev start | stop | restart | status
 
 ### 端口
--A INPUT -p tcp -m state --state NEW -m tcp --dport 53 -j ACCEPT
--A INPUT -p udp -m state --state NEW -m udp --dport 53 -j ACCEPT
--A INPUT -p tcp -m state --state NEW -m tcp --dport 80 -j ACCEPT
--A INPUT -p udp -m state --state NEW -m udp --dport 80 -j ACCEPT
--A INPUT -p tcp -m state --state NEW -m tcp --dport 138 -j ACCEPT
--A INPUT -p udp -m state --state NEW -m udp --dport 138 -j ACCEPT
--A INPUT -p tcp -m state --state NEW -m tcp --dport 443 -j ACCEPT
--A INPUT -p udp -m state --state NEW -m udp --dport 443 -j ACCEPT
--A INPUT -p tcp -m state --state NEW -m tcp --dport 8080 -j ACCEPT
--A INPUT -p udp -m state --state NEW -m udp --dport 8080 -j ACCEPT
+* -A INPUT -p tcp -m state --state NEW -m tcp --dport 53 -j ACCEPT
+* -A INPUT -p udp -m state --state NEW -m udp --dport 53 -j ACCEPT
+* -A INPUT -p tcp -m state --state NEW -m tcp --dport 80 -j ACCEPT
+* -A INPUT -p udp -m state --state NEW -m udp --dport 80 -j ACCEPT
+
