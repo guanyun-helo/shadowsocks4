@@ -6,3 +6,15 @@
 * 然后执行./bbr.sh
 * 开启bbr需要kvm内核
 
+
+Shadowsocks-Python 版：
+/etc/init.d/shadowsocks-python start | stop | restart | status
+
+ShadowsocksR 版：
+/etc/init.d/shadowsocks-r start | stop | restart | status
+
+Shadowsocks-Go 版：
+/etc/init.d/shadowsocks-go start | stop | restart | status
+
+Shadowsocks-libev 版：
+/etc/init.d/shadowsocks-libev start | stop | restart | status
