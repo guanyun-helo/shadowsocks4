@@ -11,8 +11,8 @@
         "9004":"password4"
     },
     "timeout":300,
-    "method":"your_encryption_method",
-    "protocol": "your_protocol",
+    "method":"aes-256-cfb",
+    "protocol": "origin",
     "protocol_param": "",
     "obfs": "your_obfs",
     "obfs_param": "",
